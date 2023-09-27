@@ -3,7 +3,7 @@ import { NoteAction, NoteActionTypes, NoteState } from "../../types/note"
 const initialState: NoteState = {
    notes: [],
    page: 1,
-   limit: 4,
+   limit: 6,
    fixation: true,
 }
 
