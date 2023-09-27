@@ -1,43 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/style.min.css?_v=20230802084517">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+  <!--
+      manifest.json предоставляет метаданные, используемые, когда ваше веб-приложение установлено на
+       мобильное устройство или рабочий стол пользователя. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-  </body>
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Обратите внимание на использование %PUBLIC_URL% в приведенных выше тегах.
+       Он будет заменен URL-адресом общедоступной папки во время сборки.
+       Только файлы внутри «общедоступной» папки могут быть доступны из HTML.
+
+       В отличие от «/favicon.ico» или «favicon.ico», «%PUBLIC_URL%/favicon.ico» будет
+       корректно работают как с маршрутизацией на стороне клиента, так и с общедоступным URL-адресом без полномочий root.
+       Узнайте, как настроить общедоступный URL-адрес без полномочий root, запустив `npm run build`.
+    -->
+  <title>React, Redux, TypeScript</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo logo">
+          <button type="button" class="logo__icon icon-menu"><span></span></button>
+
+          <div class="logo__link">
+            <a href="" class="logo__link_image-ibg">
+              <img src="/img/react-logo.svg" alt="">
+            </a>
+          </div>
+
+        </div>
+        <div class="header__menu menu">
+          <nav class="menu__body">
+            <ul id="header-menu" class="menu__list">
+              <!-- 
+              <li class="menu__item"><a href="" class="menu__link">Hauptseite</a></li>
+              <li class="menu__item"><a href="" class="menu__link">Hervorgehoben</a></li>
+              <li class="menu__item"><a href="" class="menu__link">Service</a></li>
+              <li class="menu__item"><a href="" class="menu__link">Preisgestaltung</a></li>
+              -->
+            </ul>
+          </nav>
+        </div>
+        <div data-da=".header__menu,768" data-language class="header__language">
+          <select name="form[]" data-class-modif="language">
+            <option value="Ru" selected>Ru</option>
+            <option value="Ukr">Ukr</option>
+            <option value="Eng">Eng</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <section class="page__root root">
+        <div class="root__container">
+
+          <div id="root">
+          </div>
+        </div>
+      </section>
+
+      <section class="page__notes notes">
+        <div class="notes__container">
+          <div class="notes__content">
+            <div id="notes" class="notes__items items-notes">
+              <!-- <div id="notes" class="items-notes__body"> -->
+              <!-- <div id="notes"> -->
+
+
+              <!-- <article class="items-notes__item item-note">
+                  <span class="item-note__delete"></span>
+                  <input placeholder="Название заметки" class="item-note__title" type="text" name="title-note">
+                  <textarea placeholder="Введите текст..." class="item-note__text" name="text-note" cols="30"
+                    rows="10"></textarea>
+                </article>
+                <article class="items-notes__item item-note">
+                  <span class="item-note__delete"></span>
+                  <input placeholder="Название заметки" class="item-note__title" type="text" name="title-note">
+                  <textarea placeholder="Введите текст..." class="item-note__text" name="text-note" cols="30"
+                    rows="10"></textarea>
+                </article>
+                <article class="items-notes__item item-note">
+                  <span class="item-note__delete"></span>
+                  <input placeholder="Название заметки" class="item-note__title" type="text" name="title-note">
+                  <textarea placeholder="Введите текст..." class="item-note__text" name="text-note" cols="30"
+                    rows="10"></textarea>
+                </article>
+                 -->
+
+
+              <!-- </div> -->
+            </div>
+            <div class="notes__description description-notes">
+              <div class="description-notes__body">
+                <div class="description-notes__title">
+                  <h2 class="page__title">Как работают заметки</h2>
+                </div>
+                <div class="description-notes__text page__text">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, aut.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, aut.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, aut.</p>
+                </div>
+
+                <div id="note-add__button">
+                  <!-- <button class="description-notes__add-note page__button">Добавить Заметку</button> -->
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content">
+
+          <div class="footer__icons icons-footer">
+            <div class="icons-footer__body">
+              <img src="/img/react-logo.svg" alt="" class="icons-footer__icon">
+              <img src="/img/redux.svg" alt="" class="icons-footer__icon">
+              <img src="/img/typescript.svg" alt="" class="icons-footer__icon">
+            </div>
+          </div>
+
+          <div class="footer__menu menu-footer">
+            <nav class="menu-footer__body">
+              <div class="menu-footer__content">
+                <div class="menu-footer__title">
+                  <h3 class="footer__title">Меню:</h3>
+                </div>
+
+                <ul id="footer-menu" class="menu-footer__list">
+                  <!-- <li class="menu-footer__item"><a href="" class="menu-footer__link">Hauptseite</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Hervorgehoben</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Service</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Preisgestaltung</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Preisgestaltung</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Preisgestaltung</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Preisgestaltung</a></li> -->
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="footer__contacts contacts">
+            <div class="contacts__body">
+              <div class="contacts__title">
+                <h3 class="footer__title">Мои контакты</h3>
+              </div>
+              <div class="contacts__links">
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <p class="contacts__item_telegram"><span class="contacts__item_telegram-title">Telegram:</span>
+                      @oleg_krivonos_kr</p>
+                  </li>
+                  <li class="contacts__item">
+                    <p class="contacts__item_email"><span class="contacts__item_email-title">E-Mail:</span> <a
+                        href="mailto:o.krivonos.kr@gmail.com" class="contacts__link">o.krivonos.kr@gmail.com</a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <!--
+      Этот файл HTML является шаблоном.
+       Если вы откроете его прямо в браузере, то увидите пустую страницу.
+
+       Вы можете добавить в этот файл веб-шрифты, метатеги или аналитику.
+       На этапе сборки связанные скрипты будут помещены в тег <body>.
+
+       Чтобы начать разработку, запустите `npm start` или `yarn start`.
+       Чтобы создать рабочий пакет, используйте «npm run build» или «yarn build».
+    -->
+  <script src="%PUBLIC_URL%/js/app.min.js?_v=20230802084517"></script>
+</body>
+
 </html>
